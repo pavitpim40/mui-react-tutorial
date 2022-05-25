@@ -42,3 +42,32 @@ import SaveIcon from "@mui/icons-material/Save";
         </ButtonGroup>
 
 ```
+
+# Checkbox
+
+```js
+    <Checkbox
+        checked={checked}
+        onChange={(e) => setChecked(e.target.checked)}
+        color="primary"
+        disabled
+    />
+
+```
+## checkbox with FormControl and icon
+```js
+<FormControlLabel
+        control={
+          <Checkbox
+            checked={checked}
+            icon={<DeleteIcon />}
+            checkedIcon={<SaveIcon />}
+            onChange={(e) => setChecked(e.target.checked)}
+            inputProps={{ "aria-label": "primary checkbox" }}
+          />
+        }
+        label="Secondary"
+      />js
+
+
+```
